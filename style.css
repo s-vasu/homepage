@@ -3,6 +3,8 @@
   padding:0;
   /* border:2px solid red; */
   box-sizing: border-box;
+  transition: 0.7s;
+  
 }
 nav {
     background-color: #eee;
@@ -28,14 +30,16 @@ nav {
     margin-top:3%;
   }
   #home h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: absolute;
     width:40%;
     top:40%;
     text-align: center;
-    right: 11%;
+    right: 10.5%;
     color:white;
   }
   #home p{
+    font-family: 'Courier New', Courier, monospace;
     position: absolute;
     width:40%;
     top:45%;
@@ -75,6 +79,12 @@ nav li:hover{
     text-decoration: none;
     color: black;
   }
+  nav a:hover {
+    /* text-decoration: none; */
+    color: white;
+    background-color: gray;
+    font-size: 1.2em;
+  }
 
   #about-me{
     padding-left: 3%;
@@ -102,6 +112,7 @@ nav li:hover{
     /* padding-top: 3%; */
     line-height: 2;
     font-size:1.2rem;
+    overflow: auto;
   }
   .info{
     line-height: 1;
@@ -160,7 +171,12 @@ h2{
     height: 200px; 
     object-fit: cover;
     border-radius:5px;
+    box-shadow:1.5px 1.5px 3px black;
 }
-  
+
+.gallery-grid img:hover{
+  width: 32%;
+    height: 250px; 
+}
   
   
